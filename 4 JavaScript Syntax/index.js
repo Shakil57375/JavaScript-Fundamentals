@@ -1,0 +1,3 @@
+/*
+ JavaScript literals are fixed values directly written into your code to represent various data types, such as numbers, strings, booleans, objects, arrays, and more. They help make your code concise and clear by avoiding the need to store values in variables or calculate them on the fly. Common types of literals include numeric, string, boolean, object, array, regular expression, null, and undefined literals.
+*/
