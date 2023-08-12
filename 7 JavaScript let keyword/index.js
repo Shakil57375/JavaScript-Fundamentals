@@ -22,6 +22,6 @@ function myFunc(){
 }
 
 // block scope
-{
+if(a===b){
     let x = 3;
 }
