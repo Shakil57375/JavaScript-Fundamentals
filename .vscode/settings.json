@@ -1,9 +1,0 @@
-{
-    "grammarly.selectors": [
-        {
-            "language": "javascript",
-            "scheme": "file",
-            "pattern": "7 JavaScript let keyword/hoisting.js"
-        }
-    ]
-}
