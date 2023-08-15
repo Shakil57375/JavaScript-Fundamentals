@@ -27,6 +27,8 @@ sleep("Fa", "Going")
 
 // console.log(toCelsius);// if we didn't use () then it will return an object. By default everything in javascript is a object.
 
+// console.log(toCelsius);// If you access a method without the () parentheses, it will return the function definition.
+
 
 let name = "hossain"
 function myFunc(){
