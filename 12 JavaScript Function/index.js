@@ -6,14 +6,14 @@ sleep("Shakil", "scrolling Facebook") //arguments
 sleep("Fa", "Going")
  */
 
-// function myFunction(a, b){
-//     console.log("object");
-//     return a * b;
-//     // return undefined // by default javaScript returns undefined.
-// }
+function myFunction(a, b){
+    // console.log("object");
+    return a * b;
+    // return undefined // by default javaScript returns undefined.
+}
 
-// let x = myFunction(4, 3)
-// console.log(x);
+let x = myFunction(4, 3)
+console.log(x);
 
 // function toCelsius(fahrenheit){
 //     return (5/9) * (fahrenheit - 32)

@@ -1,4 +1,4 @@
-// to use string on a string user \before starting and closing
+// to use string on a string user \ before starting and closing
 let name = " it's me \"shakil\""
 console.log(name);
 let text = "AB  C"
