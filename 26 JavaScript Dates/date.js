@@ -41,4 +41,26 @@ const m = new Date();
 // const d = new Date();
 // console.log(d.getSeconds())
 const d = new Date();
-console.log(d.toUTCString())
+// console.log(d.toUTCString())
+const t = new Date();
+// console.log(d.getTime())
+let ms = Date.now();
+// console.log(ms)
+
+// Calculate the number of years since 1970/01/01:
+
+const minute = 1000 * 60;
+const hour = minute * 60;
+const day = hour * 24;
+const year = day * 365;
+
+let years = Math.round(Date.now() / year);
+// console.log(years)
+
+const event = new Date();
+console.log(event.toString()); //Sat Sep 09 2023 11:49:49 GMT+0600 (Bangladesh Standard Time)
+// expected output: Wed Oct 05 2011 16:48:00 GMT+0200 (CEST)
+// (note: your timezone may vary)
+
+console.log(event.toISOString()); // 2023-09-09T05:49:49.437Z
+// expected output: 2011-10-05T14:48:00.000Z
