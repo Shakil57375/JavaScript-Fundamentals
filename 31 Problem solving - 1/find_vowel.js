@@ -8,6 +8,11 @@ const findVowels = (sentence) =>{
             count++
         }
     })
+    // letters.forEach((value, index, array)=>{
+    //     if(vowels.includes(value)){
+    //         count++
+    //     }
+    // })
     return count
 }
 
