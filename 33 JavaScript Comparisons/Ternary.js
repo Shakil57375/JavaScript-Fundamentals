@@ -26,9 +26,40 @@ if (age >= 16) {
 
 // program to check pass or fail
 
-let marks = 30;
+// let marks = 30;
 
-// check the condition
-let result = (marks >= 40) ? 'pass' : 'fail';
+// // check the condition
+// let result = (marks >= 40) ? 'pass' : 'fail';
 
-console.log(`You ${result} the exam.`);
+// console.log(`You ${result} the exam.`);
+
+let price = 33;
+
+price > 44 ? console.log("buy") : console.log("not buy")
+
+// program to check if number is positive, negative or zero
+// let a = 3;
+// let result = (a >= 0) ? (a == 0 ? "zero" : "positive") : "negative";
+// console.log(`The number is ${result}.`);
+
+function printPoor() {
+    console.log("Poor result")
+    return "poor"
+  }
+  
+  function printSuccess() {
+    console.log("Nice result")
+    return "success"
+  }
+  
+  
+  const pass = false;
+  
+  const result = pass ? printSuccess() : printPoor()
+  // Poor result (console.log executed)
+  
+  console.log(result)
+  // poor
+
+const age = 12
+  console.log(age >= 18 ? age < 30 ? "you are adult" : "you are old" : "you are young")
