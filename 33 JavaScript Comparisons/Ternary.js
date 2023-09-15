@@ -1,6 +1,6 @@
 // Ternary Operator
 // condition ? doThisIfTrue : doThisIfFalse
-1 > 2 ? console.log(true) : console.log(false)
+1 > 2 ? console.log(true) : console.log(false);
 // returns false
 /* let age = 15;
 let canDrive = age >= 16 ? 'yes' : 'no';
@@ -35,7 +35,7 @@ if (age >= 16) {
 
 let price = 33;
 
-price > 44 ? console.log("buy") : console.log("not buy")
+price > 44 ? console.log("buy") : console.log("not buy");
 
 // program to check if number is positive, negative or zero
 // let a = 3;
@@ -43,23 +43,50 @@ price > 44 ? console.log("buy") : console.log("not buy")
 // console.log(`The number is ${result}.`);
 
 function printPoor() {
-    console.log("Poor result")
-    return "poor"
-  }
-  
-  function printSuccess() {
-    console.log("Nice result")
-    return "success"
-  }
-  
-  
-  const pass = false;
-  
-  const result = pass ? printSuccess() : printPoor()
-  // Poor result (console.log executed)
-  
-  console.log(result)
-  // poor
+  console.log("Poor result");
+  return "poor";
+}
 
-const age = 12
-  console.log(age >= 18 ? age < 30 ? "you are adult" : "you are old" : "you are young")
+function printSuccess() {
+  console.log("Nice result");
+  return "success";
+}
+
+const pass = false;
+
+const result = pass ? printSuccess() : printPoor();
+// Poor result (console.log executed)
+
+console.log(result);
+// poor
+
+const age = 12;
+console.log(
+  age >= 18 ? (age < 30 ? "you are adult" : "you are old") : "you are young"
+);
+
+// const score = 60
+
+// const scoreRating =
+//   score > 70
+//     ? "Excellent"
+//     : score > 50
+//     ? "Average"
+//     : "Do better"
+
+// console.log(scoreRating)
+// // "Average"
+
+const score = 45
+
+const scoreRating =
+  score > 70
+    ? "Excellent"
+    : score > 50
+    ? "Average"
+    : score > 40
+    ? "Fair"
+    : "Do better"
+
+console.log(scoreRating)
+// "Fair"
