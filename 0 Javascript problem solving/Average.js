@@ -8,7 +8,11 @@ function calculateAverage(array){
     return average;
 }
 
+const findAverage = (numbers) =>{
+    return numbers.reduce((a,b)=> (a + b)) / numbers.length
+}
+
 const array = [2,2,5,7];
-const average = calculateAverage(array);
+const average = findAverage(array);
 console.log(average);
   
