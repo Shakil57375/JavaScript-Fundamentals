@@ -25,7 +25,7 @@
 //   text += cars[i] + "<br>";
 // }
 
-// find odd, even and prime number in an array by using for loop
+/* // find odd, even and prime number in an array by using for loop
 
 const myArray = [1, 4, 5, 6 , 3 , 6, 3, 7, 32, 2, 5]
 let oddNumbers = [];
@@ -44,4 +44,21 @@ for(let i = 0; i < myArray.length; i++){
 }
 console.log(oddNumbers)
 console.log(evenNumbers)
-console.log(primeNumbers)
+console.log(primeNumbers) */
+
+const carNames = ["Toyota", "Honda", "Ford", "Chevrolet", "Volkswagen", "BMW", "Mercedes-Benz", "Audi", "Nissan", "Tesla"];
+
+for(let i = 0; i < carNames.length; i++){
+	console.log(carNames[i])
+}
+
+// for (expression 1; expression 2; expression 3) {
+// 	// code block to be executed
+//   }
+
+let i = 2;
+let len = carNames.length;
+let text = "";
+for (; i < len; i++) {
+  text += carNames[i] + "<br>";
+}
