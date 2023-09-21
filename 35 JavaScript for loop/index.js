@@ -47,7 +47,6 @@ console.log(evenNumbers)
 console.log(primeNumbers) */
 
 const carNames = ["Toyota", "Honda", "Ford", "Chevrolet", "Volkswagen", "BMW", "Mercedes-Benz", "Audi", "Nissan", "Tesla"];
-
 for(let i = 0; i < carNames.length; i++){
 	console.log(carNames[i])
 }
@@ -63,7 +62,7 @@ for (; i < len; i++) {
   text += carNames[i] + "<br>";
 }
 
-/* 
+/*  
 var i = 5;
 
 for (var i = 0; i < 10; i++) {
