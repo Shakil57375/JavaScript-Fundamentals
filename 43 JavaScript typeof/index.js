@@ -58,3 +58,14 @@ car = undefined; // Value is undefined, type is undefined
 console.log(car); */
 
 let car = ""; // The value is "", the typeof is "string"
+
+/* 
+Difference Between Undefined and Null
+undefined and null are equal in value but different in type:
+
+typeof undefined           // undefined
+typeof null                // object
+
+null === undefined         // false
+null == undefined          // true
+*/
