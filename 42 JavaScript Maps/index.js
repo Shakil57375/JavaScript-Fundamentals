@@ -15,8 +15,28 @@ const fruits = new Map([
   ["bananas", 300],
   ["oranges", 200],
 ]);
-console.log(fruits.size) 
+// console.log(fruits.size) 
+// to check a key was in the array or not use Map.has()
+// console.log(fruits.has("apples"))
 
+// List all entries
+/* let text = "";
+fruits.forEach (function(value, key) {
+  console.log(key)
+  console.log(value)
+  text += key + ' = ' + value;
+}) */
+
+// console.log(text)
+
+// List all entries
+let text = "";
+for (const x of fruits.entries()) {
+  console.log(x)
+  text += x;
+}
+
+console.log(text)
 
 // Create a Map
 /* const fruits = new Map();
