@@ -2,7 +2,8 @@
 const vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
 const findVowels = (sentence) =>{
     let count = 0;
-    const letters = Array.from(sentence)
+    const letters = vv
+    console.log(letters)
     letters.forEach(function(value, index, array){
         if(vowels.includes(value)){
             count++
