@@ -12,4 +12,8 @@ let result = text.replace("Microsoft", "W3Schools"); */
 // replace method case insensitive
 let text = "Visit Microsoft!"
 let result = text.replace(/visit/i, "go")
-console.log(result)
+// console.log(result)
+// global replace if there is multiple matching elements of replace text it will only return the first and avoid the others if you want to replace all of those use /ig
+let test = "Hello I am me. I am to he could"
+let searched = test.replace(/am/ig , "me")
+console.log(searched)
