@@ -1,7 +1,7 @@
 // there is four type of binding in javascript
+// implicit binding
 // explicit binding
 // new binding
-// implicit binding
 // window binding
 
 /* let shakil = {
@@ -14,7 +14,7 @@
 
 shakil.PrintMyName() */
 
-var printPlayerNameFunction = function(obj){
+/* var printPlayerNameFunction = function(obj){
     obj.printPlayerName = function(){
         console.log(this.name)
     }
@@ -34,4 +34,20 @@ printPlayerNameFunction(shakil)
 printPlayerNameFunction(tamim)
 
 shakil.printPlayerName()
-tamim.printPlayerName()
+tamim.printPlayerName() */
+
+// implicit binding
+
+/* var Person = function(name, age){
+    return{
+        name : name,
+        age : age,
+        printName : function(){
+            console.log(this.name);
+        }
+    }
+}
+
+var sakib = Person("sakib", 35)
+sakib.printName(); */
+
