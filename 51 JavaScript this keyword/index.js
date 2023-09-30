@@ -77,3 +77,14 @@ var v = [v1, v2, v3]
 printName.call(sakib, v);
  */
 
+// new binding
+
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+        console.log(`${name} is ${age} year old`);
+    }
+}
+
+var sakib = new Person("Sakib", 33)
