@@ -38,16 +38,42 @@ tamim.printPlayerName() */
 
 // implicit binding
 
-/* var Person = function(name, age){
-    return{
-        name : name,
-        age : age,
-        printName : function(){
-            console.log(this.name);
-        }
-    }
-}
+/* var Person = function (name, age) {
+  return {
+    name: name,
+    age: age,
+    printName: function () {
+      console.log(this.name);
+    },
+    father: {
+      name: "Mr xx",
+      printName: function () {
+        console.log(this.name);
+      },
+    },
+  };
+};
 
-var sakib = Person("sakib", 35)
-sakib.printName(); */
+var sakib = Person("sakib", 35);
+sakib.printName();
+sakib.father.printName(); */
+
+// explicit binding
+
+/* var printName = function (r1, r2, r3) {
+  console.log(`${this.name} is ${r1}, ${r2} and ${r3}`);
+};
+
+var sakib = {
+  name: "Sakib",
+  age: 35,
+};
+
+var v1 = "Handsome";
+var v2 = "All-rounder";
+var v3 = "best player";
+
+var v = [v1, v2, v3]
+printName.call(sakib, v);
+ */
 
