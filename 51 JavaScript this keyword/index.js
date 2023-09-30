@@ -74,8 +74,32 @@ var v2 = "All-rounder";
 var v3 = "best player";
 
 var v = [v1, v2, v3]
-printName.call(sakib, v);
- */
+printName.call(sakib, v1, v2, v3);
+printName.apply(sakib, v);
+var newFunc = printName.bind(sakib, v);
+newFunc() */
+
+/* Function Borrowing
+With the bind() method, an object can borrow a method from another object.
+
+This example creates 2 objects (person and member).
+
+The member object borrows the fullname method from the person object: */
+const person = {
+    firstName:"John",
+    lastName: "Doe",
+    fullName: function () {
+      return this.firstName + " " + this.lastName;
+    }
+  }
+  
+  const member = {
+    firstName:"Hege",
+    lastName: "Nilsen",
+  }
+  
+  let fullName = person.fullName.bind(member);
+
 
 // new binding
 
@@ -89,10 +113,21 @@ printName.call(sakib, v);
 
 var sakib = new Person("Sakib", 33) */
 
-function Person(name, age){
+/* function Person(name, age){
     this.name = name;
     this.age = age;
     console.log(`${name} is ${age} year old`)
 }
 
-var sakib = new Person("Sakib", 33)
+var sakib = new Person("Sakib", 33) */
+
+// window binding
+var PrintName = function (){
+    console.log(this.name) // undefined
+}
+
+var sakib = {
+    name : "Sakib"
+}
+
+PrintName()
