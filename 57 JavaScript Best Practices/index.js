@@ -62,3 +62,106 @@ const x4 = {};           // new object
 const x5 = [];           // new array object
 const x6 = /()/;         // new regexp object
 const x7 = function(){}; // new function object */
+// Beware of Automatic Type Conversions
+// JavaScript is loosely typed.
+
+// A variable can contain all data types.
+
+// A variable can change its data type:
+
+// Example
+// let x = "Hello";     // typeof x is a string
+// x = 5;               // changes typeof x to a number
+// Beware that numbers can accidentally be converted to strings or NaN (Not a Number).
+
+// When doing mathematical operations, JavaScript can convert numbers to strings:
+
+// Example
+// let x = 5 + 7;       // x.valueOf() is 12,  typeof x is a number
+// let x = 5 + "7";     // x.valueOf() is 57,  typeof x is a string
+// let x = "5" + 7;     // x.valueOf() is 57,  typeof x is a string
+// let x = 5 - 7;       // x.valueOf() is -2,  typeof x is a number
+// let x = 5 - "7";     // x.valueOf() is -2,  typeof x is a number
+// let x = "5" - 7;     // x.valueOf() is -2,  typeof x is a number
+// let x = 5 - "x";     // x.valueOf() is NaN, typeof x is a number
+// Subtracting a string from a string, does not generate an error but returns NaN (Not a Number):
+
+// Example
+// "Hello" - "Dolly"    // returns NaN
+// Use === Comparison
+// The == comparison operator always converts (to matching types) before comparison.
+
+// The === operator forces comparison of values and type:
+
+// Example
+// 0 == "";        // true
+// 1 == "1";       // true
+// 1 == true;      // true
+
+// 0 === "";       // false
+// 1 === "1";      // false
+// 1 === true;     // false
+// Use Parameter Defaults
+// If a function is called with a missing argument, the value of the missing argument is set to undefined.
+
+// Undefined values can break your code. It is a good habit to assign default values to arguments.
+
+// Example
+// function myFunction(x, y) {
+//   if (y === undefined) {
+//     y = 0;
+//   }
+// }
+// ECMAScript 2015 allows default parameters in the function definition:
+
+// function (a=1, b=1) { /*function code*/ }
+// Read more about function parameters and arguments at Function Parameters
+
+// End Your Switches with Defaults
+// Always end your switch statements with a default. Even if you think there is no need for it.
+
+// Example
+// switch (new Date().getDay()) {
+//   case 0:
+//     day = "Sunday";
+//     break;
+//   case 1:
+//     day = "Monday";
+//     break;
+//   case 2:
+//     day = "Tuesday";
+//     break;
+//   case 3:
+//     day = "Wednesday";
+//     break;
+//   case 4:
+//     day = "Thursday";
+//     break;
+//   case 5:
+//     day = "Friday";
+//     break;
+//   case 6:
+//     day = "Saturday";
+//     break;
+//   default:
+//     day = "Unknown";
+// }
+// Avoid Number, String, and Boolean as Objects
+// Always treat numbers, strings, or booleans as primitive values. Not as objects.
+
+// Declaring these types as objects, slows down execution speed, and produces nasty side effects:
+
+// Example
+// let x = "John";             
+// let y = new String("John");
+// (x === y) // is false because x is a string and y is an object.
+// Or even worse:
+
+// Example
+// let x = new String("John");             
+// let y = new String("John");
+// (x == y) // is false because you cannot compare objects.
+// Avoid Using eval()
+// The eval() function is used to run text as code. In almost all cases, it should not be necessary to use it.
+
+// Because it allows arbitrary code to be run, it also represents a security problem.
