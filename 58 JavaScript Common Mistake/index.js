@@ -155,7 +155,7 @@ console.log(count); //error: count is not defined */
 //   return num % 2 === 1;
 // }
 
-// 8. Not Short-circuiting Loops
+//! 8. Not Short-circuiting Loops
 // Short-circuiting is another way to improve your for loops. Let’s say write a function where you need to determine whether an array of numbers includes an even number. Here’s an example of how you might solve that.
 
 // const hasEvenNumber = (numbersArr) => {
@@ -182,3 +182,15 @@ console.log(count); //error: count is not defined */
 //   return false;
 // }
 // This way, your logic is cleaner and you’re avoiding unnecessarily iterating through additional items in the array.
+
+// 9. Double vs Triple Equals
+// This is a huge topic of confusion in JavaScript. To start, it’s important to know that the double equals compares two values without taking into account their data types. On the flip side, the triple equals compares two values while taking into account their data types.
+
+// Since the double equals doesn’t take into account the data types of the two values, JavaScript has to have some way to compare them. To do this, JavaScript secretly will cast (convert one data type to another) each value accordingly so they can be compared. This means that a number and string could be considered to be double equal but not triple equal since they are different data types.
+
+// const jamesAge = "31";
+// const jessAge = 31;
+
+// console.log(jamesAge == jessAge); //equal
+// console.log(jamesAge === jessAge); //not equal
+// General piece of advice: use triple equals by default unless you have a specific reason to use double equals. It’s typically safer and helps avoids unintended results. For more details on how these equalities work, check out the MDN docs.
