@@ -85,3 +85,21 @@ for (let i = 0; i < 10; i++) {
   count = count + i;
 }
 console.log(count); */
+
+/* 4.//! Misunderstanding Variable Scope
+Variable scope is a tricky concept for new developers, especially in JavaScript. One common problem I see from learning developers is defining a variable inside of a function and expecting to be able to access that variable outside of the function it is defined in.
+
+That’s a pretty generic problem I see. Let’s take a look at a more JavaScript specific example though. This goes back to the usage of const and let vs var. I mentioned that var is a more outdated way of declaring variables, but you will still come across it in documentation and source code. Because of that, it’s important to understand how scoping differs with it.
+
+If you define a variable using var inside of a for loop, for example, that variable is also accessible after the for loop. Here’s a quick example.
+
+for (let i = 0; i < 10; i++) {
+  var count = 5;
+}
+console.log(count);
+This code will actually work although it’s counter-intuitive to me. The value of count is accessible after the for loop it was defined in. However, this does not work for const and let variables. If defined inside of a for loop, they are only accessible inside of that for loop.
+
+for (let i = 0; i < 10; i++) {
+  const count = 5;
+}
+console.log(count); //error: count is not defined */
