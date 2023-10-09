@@ -130,3 +130,27 @@ console.log(count); //error: count is not defined */
 
 // https://medium.com/swlh/how-long-should-functions-be-how-do-we-measure-it-cccbdcd8374c
 // https://softwareengineering.stackexchange.com/questions/133404/what-is-the-ideal-length-of-a-method-for-you
+
+//! 7. Unnecessary Else Statements
+// What often gets misunderstood is that a return statement inside of a function actually stops the execution of that function. In other words, after you return inside of a function, no other code inside of that function gets run. Because of that, I often see unnecessary else statements. Here’s an example.
+
+// const isOdd = (num) => {
+//   if (num % 2 === 1) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// };
+// Because we already have a return in the if condition, the else is unnecessary. We simplify this code by removing the else condition.
+
+// const isOdd = (num) => {
+//   if (num % 2 === 1) {
+//     return true;
+//   }
+//   return false;
+// };
+// You can even take this one step further and return the evaluated expression directly since num%2 === 1 returns a boolean.
+
+// const isOdd = (num) => {
+//   return num % 2 === 1;
+// }
