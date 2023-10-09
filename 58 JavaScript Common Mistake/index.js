@@ -228,3 +228,45 @@ console.log(count); //error: count is not defined */
 //   name:"James"
 // }
 // console.log(person1.name === person2.name);
+
+// 11. Cannot Read Property of Undefined
+// As I’m writing this, I’m realizing that I didn’t necessarily order this in terms of frequency. If I did, this one would rank much higher 🤣.
+
+// Anyways, one thing that beginner (and experienced) developers forget to do is validate input parameters to a function. Just because you expect to receive an object, doesn’t mean you actually will. Let’s look at this function that prints the name property of an object.
+
+// const printNamedGreeting = (person) => {
+//   console.log(person.name)
+// }
+// Seems simple enough, but what happens if someone calls this function and doesn’t pass anything? Well, you’ll get a cannot read property name of undefined error. So, how do you improve on this code?
+
+// Well, you’ll need to validate that the input you receive matches your expectations. In this case, one simple (although not complete) solution would be to check that the input parameter is not “falsy”.
+
+// const printNamedGreeting = (person) => {
+//   if(!person){
+//     return console.log("Invalid person object")
+//   }
+//   console.log(person.name)
+// }
+// In this case, if the person parameter is “falsy”, we log out an error. Otherwise, we continue to log out the name property.
+
+// Keep in mind, this is a quick and simple validation check, but in a real application you’d probably want something more in-depth. You’d want to validate that the input is actually an object (not a string for example) and that it also has a name property.
+
+// Lastly, before you say it, yes, you could use TypeScript for this…I know! 😃
+
+// 12. Mutation with Arrays
+
+// 12. Mutation with Arrays
+// Mutation is an interesting concept in JavaScript. In general, mutation occurs when you call a function on a variable that then changes the variable itself in some way. For example, when you call the sort function on an array, the array itself is mutated. However, if you call the map function on an array, the original array remains intact. It is not mutated.
+
+// const names = ["Jess", "James",  "Sevi", "Lily"];
+// const copiedNames = [...names];
+// const sortedNames = names.sort();
+// console.log(names); //["James", "Jess", "Lily", "Sevi"]
+// console.log(copiedNames); //["Jess", "James",  "Sevi", "Lily"]
+// console.log(sortedNames); //["James", "Jess", "Lily", "Sevi"]
+// In this example, calling names.sort() will mutate the original names array, meaning the names and sortedNames arrays will look the same. However, the copiedNames array is unaffected since it was a true copy of the original array.
+
+// However, if you were to call the map() function on the array, the original names array is unaffected.
+
+// const firstLettersArray = names.map( name => name[0]);
+// The main lesson here is to understand how the functions that you call mutate or not the data you’re working with. This should be listed in the documentation for whatever function you’re calling.
