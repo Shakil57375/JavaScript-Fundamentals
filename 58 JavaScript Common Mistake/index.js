@@ -103,3 +103,24 @@ for (let i = 0; i < 10; i++) {
   const count = 5;
 }
 console.log(count); //error: count is not defined */
+
+//! 5. Poorly Named Variables
+// Poorly named variables make code one million times more difficult to read and follow. This is a mistake I’ve seen every single beginner developer that I’ve worked with make. Using names like thing1, thing2, and anotherThing give no context as to what the variables are. This makes it much harder for me to help debug someone’s code. Let’s take a look at an example.
+
+// const arr = ["James", "Jess", "Lily", "Sevi"];
+// let str = "";
+// for (let i = 0; i < arr.length; i++) {
+//   const tmp = arr[i];
+//   str += tmp[0];
+// }
+// console.log(str);
+// The variables arr, str, and tmp give no context for what the variables are and what the code is doing. Here’s an example that uses naming conventions that add much more context.
+
+// const names = ["James", "Jess", "Lily", "Sevi"];
+// let retVal = "";
+// for (let i = 0; i < arr.length; i++) {
+//   const name = arr[i];
+//   retVal += name[0];
+// }
+// console.log(retVal);
+// One of the easiest pieces of advice I have is to name arrays as the pluralized version of the type of info they hold. For example, an array of names should be called names. Then, you can reference an individual items inside of that array as name. I commonly see an array named in the singular form, and it’s incredibly confusing.
