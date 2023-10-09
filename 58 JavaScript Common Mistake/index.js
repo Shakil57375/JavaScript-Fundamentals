@@ -194,3 +194,37 @@ console.log(count); //error: count is not defined */
 // console.log(jamesAge == jessAge); //equal
 // console.log(jamesAge === jessAge); //not equal
 // General piece of advice: use triple equals by default unless you have a specific reason to use double equals. It’s typically safer and helps avoids unintended results. For more details on how these equalities work, check out the MDN docs.
+
+// 10. Incorrect Object vs Primitive Comparisons
+// Another similar problem that I see is trying to compare primitives and objects for equality. There are seven primitive values in JavaScript.
+
+// number
+// string
+// bigint
+// boolean
+// undefined
+// symbol
+// null
+// Everything else is represented as an object, and objects and primitives are referenced differently. In JavaScript, primitives are referenced directly by their value. On the other hand, objects more generically reference a space in memory where the value(s) is stored. This leads to some confusion when objects and primitives. Consider this example.
+
+// const name1 = "James";
+// const name2 = "James";
+// console.log(name1 === name2);
+// Since these two variables are primitives with the same value they are considered equal, but what if we compare two objects with the same name property like so?
+
+// const person1 = {
+//   name:"James"
+// }
+// const person2 = {
+//   name:"James"
+// }
+// console.log(person1 === person2);
+// In this case, these two objects are not considered equal. This is because the two variables are actually references to different “spaces in memory”. Although they look the same, they aren’t considered to be equal because of this. If you wanted to compare their equality more appropriately, you could compare their name properties directly.
+
+// const person1 = {
+//   name:"James"
+// }
+// const person2 = {
+//   name:"James"
+// }
+// console.log(person1.name === person2.name);
