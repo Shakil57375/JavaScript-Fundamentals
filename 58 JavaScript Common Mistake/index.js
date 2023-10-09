@@ -154,3 +154,31 @@ console.log(count); //error: count is not defined */
 // const isOdd = (num) => {
 //   return num % 2 === 1;
 // }
+
+// 8. Not Short-circuiting Loops
+// Short-circuiting is another way to improve your for loops. Let’s say write a function where you need to determine whether an array of numbers includes an even number. Here’s an example of how you might solve that.
+
+// const hasEvenNumber = (numbersArr) => {
+//   let retVal;
+//   for(let i =0; i< numbersArr.length; i++){
+//     if(numbersArr[i] % 2 === 0){
+//       retVal = true;
+//     }else {
+//       retVal = false;
+//     }
+//   }
+//   return retVal;
+// }
+// In this case, we are iterating through each number and updating a boolean accordingly based on if the number is even. Unfortunately, there’s a problem. Let’s say the first number is even, but then the next number is odd. Well, the boolean is updated to true for even, then back to false for the odd number.
+
+// This would give the incorrect answer since you just want to know if the function has at least one even number (it should return true). In this case, after you see the first even number, you have your answer. You don’t need to look anymore. This is where short-circuiting comes into play. After you see one even number, return. If you never see one, return false at the end.
+
+// const hasEvenNumber = (numbersArr) => {
+//   for(let i =0; i< numbersArr.length; i++){
+//     if(numbersArr[i] % 2 === 0){
+//       return true;
+//     }
+//   }
+//   return false;
+// }
+// This way, your logic is cleaner and you’re avoiding unnecessarily iterating through additional items in the array.
