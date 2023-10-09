@@ -67,3 +67,21 @@ To fix this, it’s common to import your JavaScript at the bottom of your HTML,
 This way, the JavaScript file is being loaded after the header element has already been loaded.
 
 It’s important to note that there are also other options to explore in terms of importing your JavaScript files in your HTML. What we’ve shown is a basic example targeted at beginners, but there are additional keywords that you can look into for more details. */
+
+/* 3. //!Reassigning Const Variables
+This is such a common mistake that it continues to happen to me almost on a daily basis, so don’t feel bad if it does to you. As of ES6 (JavaScript version released in 2015), there are two main ways to declare variables: const and let. These two have, for the most part, replaced the usage of var in modern JavaScript.
+
+The difference between these two is that you cannot reassign const variables while you can with let. Here’s a piece of sample code.
+
+const count = 0;
+for (let i = 0; i < 10; i++) {
+  count = count + i;
+}
+console.log(count);
+In this case you’ll get an error: Assignment to constant variable. If you’re going to need to reassign a variable, make sure to use let.
+
+let count = 0;
+for (let i = 0; i < 10; i++) {
+  count = count + i;
+}
+console.log(count); */
