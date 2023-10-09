@@ -280,3 +280,9 @@ console.log(count); //error: count is not defined */
 // }, 0)
 // console.log("3");
 // The answer might surprise if you’re new to this. W3 Schools is always a favorite reference for me, so here’s their getting start doc for asynchronous JavaScript.
+
+// 14. Not Handling Errors
+// The problem with lots of beginner tutorials is that they rarely cover how to handle errors in JavaScript. You only see the best case scenarios for code samples, and not the “what if something goes wrong” code. It’s understandable because there’s only so much you can cover in a beginner tutorial. At some point, though, it’s important to spend some time learning how to appropriately handle errors.
+
+// Again, this might not be the spot for an in-depth tutorial on error handling, so I’ll leave you with one piece of advice. As you’re writing code, ask yourself ”what if something goes wrong here”. As long as you keep that thought in your head as you’re learning, you’ll be in a good spot!
+
