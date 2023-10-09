@@ -270,3 +270,13 @@ console.log(count); //error: count is not defined */
 
 // const firstLettersArray = names.map( name => name[0]);
 // The main lesson here is to understand how the functions that you call mutate or not the data you’re working with. This should be listed in the documentation for whatever function you’re calling.
+
+// 13. Not Understanding Asynchronous Code
+// The asynchronous nature of JavaScript is one of the most difficult things to grasp for beginner developers. This isn’t the place to go into a full tutorial of asynchronous JavaScript, so I’ll leave you with the most common beginner example there is to introduce the topic. In what order will these log statements print out?
+
+// console.log("1");
+// setTimeout(() => {
+//   console.log("2")
+// }, 0)
+// console.log("3");
+// The answer might surprise if you’re new to this. W3 Schools is always a favorite reference for me, so here’s their getting start doc for asynchronous JavaScript.
