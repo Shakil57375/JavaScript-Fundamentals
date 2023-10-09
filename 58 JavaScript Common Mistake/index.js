@@ -124,3 +124,9 @@ console.log(count); //error: count is not defined */
 // }
 // console.log(retVal);
 // One of the easiest pieces of advice I have is to name arrays as the pluralized version of the type of info they hold. For example, an array of names should be called names. Then, you can reference an individual items inside of that array as name. I commonly see an array named in the singular form, and it’s incredibly confusing.
+
+// 6. Too Large of Functions
+// This is a pretty meta mistake, but it’s extremely common early on. When developers learn about functions in JavaScript, they often have the tendency to write one function and dump all the code they need into it. However, it’s better to start thinking about how to break functions into smaller pieces of code that are more readable, composable, etc. Instead of a code example, here are a few extra links you can read for more.
+
+// https://medium.com/swlh/how-long-should-functions-be-how-do-we-measure-it-cccbdcd8374c
+// https://softwareengineering.stackexchange.com/questions/133404/what-is-the-ideal-length-of-a-method-for-you
