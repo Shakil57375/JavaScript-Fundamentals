@@ -286,3 +286,7 @@ console.log(count); //error: count is not defined */
 
 // Again, this might not be the spot for an in-depth tutorial on error handling, so I’ll leave you with one piece of advice. As you’re writing code, ask yourself ”what if something goes wrong here”. As long as you keep that thought in your head as you’re learning, you’ll be in a good spot!
 
+// 15. Not Formatting Code
+// This is another meta example, but it makes such a big difference. Similar to the variable naming section above, poorly formatted code is incredibly difficult to read. Developers are used to reading code in a standardized and formatted way. Because of that, it becomes seemingly impossible to read code that isn’t formatted.
+
+// I’ve experienced this over and over again in teaching. To answer what seems like an easy question, I find myself backtracking through the code to try and decipher what is going on. The lesson here is always spend a bit of time and energy on formatting your code correctly with indentation, spacing, etc. This will make it much easier for you to read as well as anyone else that might read your code.
