@@ -17,3 +17,10 @@ super*	switch	synchronized	this
 throw	throws	transient	true
 try	typeof	var	void
 volatile	while	with	yield */
+
+/* Removed Reserved Words
+The following reserved words have been removed from the ECMAScript 5/6 standard:
+abstract	boolean	byte	char
+double	final	float	goto
+int	long	native	short
+synchronized	throws	transient	volatile */
