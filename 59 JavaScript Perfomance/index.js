@@ -23,3 +23,10 @@ If you expect to access a DOM element several times, access it once, and use it 
 Example
 const obj = document.getElementById("demo");
 obj.innerHTML = "Hello"; */
+/* //! Avoid Unnecessary Variables
+Don't create new variables if you don't plan to save values.
+
+Often you can replace code like this:
+
+let fullName = firstName + " " + lastName;
+document.getElementById("demo").innerHTML = fullName; */
