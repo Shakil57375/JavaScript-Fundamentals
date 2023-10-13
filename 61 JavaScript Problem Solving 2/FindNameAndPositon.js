@@ -6,5 +6,6 @@ const matches = sentence.match(/sumit/ig)
 const occurrence = matches ? matches.length : 0  
 // console.log(occurrence)
 // How many number positions did sumit get for the first time?
-const position = sentence.search(/sumit/i)
+let position = sentence.search(/sumit/i)
+position = position >= 0 ? position : "not found"
 console.log(position)
