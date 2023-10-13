@@ -5,12 +5,13 @@
 const linearSearch = (arr, val) =>{
     // console.log(arr)
     // console.log(val)
-   for(let i = 0; i < arr.length; i++){
+    const length = arr.length
+   for(let i = 0; i < length; i++){
     if(arr[i] === val){
         return i
     }
    }
    return "not found"
 }
-
+            
 console.log(linearSearch(["a","n","d","e","h"], "e"))
