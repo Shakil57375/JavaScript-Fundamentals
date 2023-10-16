@@ -13,3 +13,11 @@
 // Objects are always objects
 // All JavaScript values, except primitives, are objects.
 
+// JavaScript variables can also contain many values.
+
+// Objects are variables too. But objects can contain many values.
+
+// Object values are written as name : value pairs (name and value separated by a colon).
+
+// Example
+let person = { firstName: "John", lastName: "Doe", age: 50, eyeColor: "blue" };
