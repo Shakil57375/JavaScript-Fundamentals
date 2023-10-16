@@ -20,4 +20,24 @@
 // Object values are written as name : value pairs (name and value separated by a colon).
 
 // Example
-let person = { firstName: "John", lastName: "Doe", age: 50, eyeColor: "blue" };
+let person1 = { firstName: "John", lastName: "Doe", age: 50, eyeColor: "blue" };
+
+// JavaScript Objects are Mutable
+// Objects are mutable: They are addressed by reference, not by value.
+
+// If person is an object, the following statement will not create a copy of person:
+
+// const x = person;  // Will not create a copy of person.
+// The object x is not a copy of person. It is person. Both x and person are the same object.
+
+// Any changes to x will also change person, because x and person are the same object.
+
+// Example
+const person = {
+  firstName:"John",
+  lastName:"Doe",
+  age:50, eyeColor:"blue"
+}
+
+const x = person;
+x.age = 10;      // Will change both x.age and person.age
