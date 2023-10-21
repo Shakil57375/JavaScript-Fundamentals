@@ -175,3 +175,23 @@ const myObj1 = {
   console.log(myObj1['affiliation'][1])
   // Output:
   // 'Justice League'
+
+  // Create an object:
+const myObj11 = {
+    name: 'James Howlett',
+    alias: 'Wolverine',
+    status: {
+      alignment: 'good'
+    }
+  }
+  
+  // Assign a property you want to access to a variable:
+  const myProp = 'alias'
+  
+  // Use the variable to access specific property ("alias"):
+  // Referencing "myProp" will return value "alias",
+  // which will be used to access the same property ("alias").
+  // I.e.: myObj11[myProp] => myObj11['alias']
+  console.log(myObj11[myProp])
+  // Output:
+  // 'Wolverine'
