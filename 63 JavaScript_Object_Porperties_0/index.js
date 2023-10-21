@@ -245,3 +245,39 @@ const myObj2 = {
   console.log(status)
   // Output:
   // { alignment: 'bad', occupation: 'criminal' }
+
+
+  /* //! Destructuring multiple properties
+You can use object destructuring to “destructure” multiple properties. Put another way, to assign multiple variables at the same time. To do this, you add additional properties inside the curly braces on the left side of the assignment. These properties have to be separated by commas. */
+
+// Create an object:
+const myObj3 = {
+    name: 'Dr. Reed Richards',
+    alias2: 'Mister Fantastic',
+    affiliation2: 'Fantastic Four',
+    status2: {
+      alignment: 'good'
+    }
+  }
+  
+  
+  // Use object destructuring to assign multiple variables:
+  // Desctructure "name", "alias2", "affiliation2" and "status2".
+  const { name, alias2, affiliation2, status2 } = myObj3
+  
+  // Log the values of new variables:
+  console.log(name)
+  // Output:
+  // 'Dr. Reed Richards'
+  
+  console.log(alias2)
+  // Output:
+  // 'Mister Fantastic'
+  
+  console.log(affiliation2)
+  // Output:
+  // 'Fantastic Four'
+  
+  console.log(status2)
+  // Output:
+  // { alignment: 'good' }
