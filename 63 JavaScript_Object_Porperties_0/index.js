@@ -100,6 +100,37 @@ console.log(myObj.creators[0]);
 // Output:
 // 'Stan Lee'
 
+// Create an object:
+myObj = {
+    1: 'First property',
+    'first-name': 'Bruce',
+  }
+  
+  // Try to use dot notation
+  // to access properties on "myObj".
+//   console.log(myObj.1)
+  // Output:
+  // SyntaxError: Unexpected token
+  
+  console.log(myObj.first-name)
+  // Output:
+  // NaN
+  
+  
+  // Try to use bracket notation
+  // to access properties on "myObj".
+  console.log(myObj['1'])
+  // Output:
+  // 'First property'
+  
+  console.log(myObj[1])
+  // Output:
+  // 'First property'
+  
+  console.log(myObj['first-name'])
+  // Output:
+  // 'Bruce'
+
 /* //! Bracket notation
 The second way you can use to access object properties is bracket notation. The main characteristic of method this method are square brackets. The syntax is similar to the dot notation. However, there are some important differences. You again start with the name of the object you are working with.
 
