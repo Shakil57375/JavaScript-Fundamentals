@@ -39,3 +39,12 @@ secondPlayer.checkLevel();
 //This will print "Player 2 is currently... Level 20!" to the Console
 
 //And that's it! Decide what method you prefer and start making some Objects!
+
+const person = {
+    name : "shakil",
+    age : 21
+}
+
+/* In JavaScript there are multiple ways you can use to access one of those properties. These are dot notation, bracket notation and destructuring. Dot notation is sometimes also called dot property accessor. Another name for bracket notation is square brackets property access. There is one important thing to mention.
+
+All these ways assume you know the name of the property you want to access. If you don’t know it, nothing is lost. You can loops to iterate over the object to get all properties, including the one you want. But now, let’s take a look at those three ways you can use to access object properties. */
