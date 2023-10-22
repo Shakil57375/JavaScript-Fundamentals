@@ -5,8 +5,8 @@ const person = {
 };
 let text = "";
 for (let x in person) {
-  console.log(x);
-  console.log(person);
+  console.log(x)
+  console.log(person)
   text += person[x];
 }
 
