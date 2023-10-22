@@ -20,4 +20,13 @@ const person = {
     return this.firstName + " " + this.lastName;
   },
 };
-console.log(person.fullName())
+console.log(person.fullName());
+
+/* Adding a Method to an Object
+Adding a new method to an object is easy: */
+
+person.name = function () {
+  return this.firstName + " " + this.lastName;
+};
+
+console.log(person.name())
