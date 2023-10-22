@@ -29,4 +29,12 @@ person.name = function () {
   return this.firstName + " " + this.lastName;
 };
 
+console.log(person.name());
+
+/* Using Built-In Methods
+This example uses the toUpperCase() method of the String object, to convert a text to uppercase: */
+
+person.name = function () {
+  return (this.firstName + " " + this.lastName).toUpperCase();
+};
 console.log(person.name())
