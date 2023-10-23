@@ -35,3 +35,13 @@ const person2 = {
 
 let myString1 = JSON.stringify(person2);
 console.log(myString1)
+
+// Stringify Arrays
+// It is also possible to stringify JavaScript arrays:
+
+// Example
+const arr = ["John", "Peter", "Sally", "Jane"];
+
+let myString2 = JSON.stringify(arr);
+document.getElementById("demo").innerHTML = myString2;
+console.log(typeof myString2)
