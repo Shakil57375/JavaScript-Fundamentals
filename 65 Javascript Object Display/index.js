@@ -23,3 +23,15 @@ const person1 = {
   
   let myString = JSON.stringify(person1);
   console.log(myString)
+
+//   Stringify Dates
+// JSON.stringify converts dates into strings:
+
+// Example
+const person2 = {
+  name: "John",
+  today: new Date()
+};
+
+let myString1 = JSON.stringify(person2);
+console.log(myString1)
