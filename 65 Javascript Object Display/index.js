@@ -14,3 +14,12 @@ const person = {
 //   for(elements in person){
 //     console.log(person[elements])
 //   }
+
+const person1 = {
+    name: "John",
+    age: 30,
+    city: "New York"
+  };
+  
+  let myString = JSON.stringify(person1);
+  console.log(myString)
