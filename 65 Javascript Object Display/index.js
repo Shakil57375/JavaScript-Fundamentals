@@ -5,3 +5,7 @@ const person = {
   };
 
   document.getElementById("demo").innerHTML = person;
+
+  for(elements in person){
+    console.log(person[elements])
+  }
