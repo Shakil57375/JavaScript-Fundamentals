@@ -1,3 +1,4 @@
+// can't add any elements on the object template
 class Person {
     constructor(first, last, age) {
         this.firstName = first;
