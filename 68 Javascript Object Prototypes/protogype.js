@@ -16,4 +16,13 @@
 const sakib = Person("sakib", 33)
 const tamim = Person("tamim", 36) */
 
-// 
+// creating a child blank object
+
+const captain = {
+    name : "Mash",
+    age : 33,
+    country : "Bangladesh"
+}
+
+const player = Object.create(captain)
+console.log(player.name)
