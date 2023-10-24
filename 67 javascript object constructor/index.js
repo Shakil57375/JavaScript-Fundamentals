@@ -2,10 +2,15 @@ class Person {
     constructor(first, last, age) {
         this.firstName = first;
         this.lastName = last;
+        this.fullName = function(){
+            return this.firstName + ' ' + this.lastName 
+        }
     }
 }
 
-const sumit = new Person("shakil", "hosssain")
-const sumit1 = new Person("shakil2", "hosssain2")
-console.log(sumit)
-console.log(sumit1.firstName)
+const shakil = new Person("shakil", "hosssain")
+const shakil2 = new Person("shakil2", "hosssain2")
+shakil.country = "BD"
+shakil2.age = 21
+console.log(shakil)
+console.log(shakil2.fullName())
