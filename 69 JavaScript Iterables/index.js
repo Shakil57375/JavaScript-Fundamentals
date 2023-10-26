@@ -11,3 +11,6 @@ console.log(numIterator.next())
 console.log(numIterator.next())
 console.log(numIterator.next())
 
+// ! What is iterator?
+// An Iterator is an object that has a property called symbol.iterator. By calling symbol.iterator we get an iterator and by calling its next function we can do looping.
+
