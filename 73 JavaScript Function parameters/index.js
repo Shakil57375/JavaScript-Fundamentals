@@ -34,3 +34,26 @@ function sumAll() {
 }
 
 console.log(y)
+// will not change the primitive value
+function c(x , y){
+  x = x * 4;
+  return x * y
+}
+
+let m = 4;
+let n = 3;
+console.log(m)
+console.log(c(m, n))
+// will change the reference value.
+function d(z){
+  z.one = 6;
+  return z.one * z.two
+}
+
+let f = {
+  one : 4,
+  two : 5,
+}
+
+console.log(d(f))
+console.log(m)
