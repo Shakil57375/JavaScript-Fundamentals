@@ -10,3 +10,18 @@ function withoutWindow(){
     console.log("I am the function without window object")
 }
 withoutWindow()
+// In JavaScript, the thing called this, is the object that "owns" the current code.
+// The value of this, when used in a function is the object that "owns" the function.
+function a(){
+    console.log(this)
+}
+
+a()
+
+const x = {
+    a : function (){
+        console.log(this)
+    }
+}
+
+x.a()
