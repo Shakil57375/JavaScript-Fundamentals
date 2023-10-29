@@ -4,12 +4,10 @@ function hostedFunction(){
 }
 // will not hosted to the top
 const myFunc = function(a,b){
+    // console.log(arguments.length)
     return a*b
+    // by default a function will return undefined.
 }
 
 console.log(myFunc(3,3))
-// self invoking functions.
-(function () {
-    let x = "Hello!!";  // I will invoke myself
-    console.log(x)
-  })();
+console.dir( myFunc)
