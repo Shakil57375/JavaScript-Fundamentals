@@ -42,3 +42,5 @@ const person3 = {
 
 // This will return "Mary Doe":
 console.log(person2.fullName.apply(person3 , ["Dhaka", "Bangladesh"]));
+// how to find the max number by using apply method.
+console.log(Math.max.apply("", [1, 3, 5]))
