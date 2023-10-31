@@ -38,25 +38,27 @@ tamim.printPlayerName() */
 
 // implicit binding
 
-/* var Person = function (name, age) {
+var Person = function (name, age) {
   return {
     name: name,
     age: age,
     printName: function () {
-      console.log(this.name);
+      console.log(`1 ${this.name}`);
     },
     father: {
-      name: "Mr xx",
       printName: function () {
-        console.log(this.name);
+        console.log(`2. ${this.name}`);
       },
     },
   };
 };
 
 var sakib = Person("sakib", 35);
-sakib.printName();
-sakib.father.printName(); */
+sakib.printName()
+const father = {
+  name : "mr.y"
+}
+sakib.father.printName.call(father); 
 
 // explicit binding
 

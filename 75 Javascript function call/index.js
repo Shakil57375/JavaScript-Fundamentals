@@ -47,7 +47,7 @@ This example calls the fullName method of person, using it on person1: */
 const person = {
   fullName: function () {
     // return console.log(`${this.firstName + " " + this.lastName}`);
-    return this.firstName + " " + this.lastName
+    return this.firstName + " " + this.lastName;
   },
 };
 const person1 = {
@@ -61,3 +61,19 @@ const person2 = {
 
 // This will return "John Doe":
 console.log(person.fullName.call(person1));
+// This will return "Mary Doe"
+console.log(person.fullName.call(person2));
+/* //! The call() Method with Arguments
+The call() method can accept arguments: */
+const person5 = {
+  fullName: function (city, country) {
+    return this.firstName + " " + this.lastName + "," + city + "," + country;
+  },
+};
+
+const person6 = {
+  firstName: "John",
+  lastName: "Doe",
+};
+
+console.log(person5.fullName.call(person6, "Dhaka", "Bangladesh"));
