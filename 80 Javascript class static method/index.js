@@ -3,6 +3,7 @@ class Car{
         this.name = name;
     }
     static hello(x){
+        
         return "Hello" + x.name
     }
 }
