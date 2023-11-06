@@ -18,8 +18,22 @@
     <h2 onclick="changeTextWithThis(this)">
       change text with inline send this as a parameter
     </h2>
-    
+    <!-- onclick added on on click to the button -->
     <button id="btn">click to add onclick</button>
+    <!-- onchange -->
+    <input type="text" id="fname" onchange="upperCase()" />
+    <div
+      onmousedown="mDown(this)"
+      onmouseup="mUp(this)"
+      style="
+        background-color: #d94a38;
+        width: 90px;
+        height: 20px;
+        padding: 40px;
+      "
+    >
+      Click Me
+    </div>
     <script src="./index.js"></script>
   </body>
 </html>
