@@ -6,8 +6,12 @@
     <title>DOM Events</title>
 </head>
 <body>
-    <!-- with the external function -->
-    <h2 id="heading" onclick="changeText()">change text</h2>
+    <!--! with the external function -->
+    <h2 id="heading" onclick="changeText()">change text with external function</h2>
+    <!-- ! change with inline -->
+    <h2 onclick="this.innerHTML = 'successfully changed text with inline '">change text with inline</h2>
+    <!-- ! send this as parameter -->
+    <h2 onclick="changeTextWithThis(this)">change text with inline send this as a parameter</h2>
     <script src="./index.js"></script>
 </body>
 </html>
