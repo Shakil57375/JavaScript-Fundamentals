@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM Events</title>
-</head>
-<body>
+  </head>
+  <body>
     <!--! with the external function -->
-    <h2 id="heading" onclick="changeText()">change text with external function</h2>
+    <h2 id="heading" onclick="changeText()">
+      change text with external function
+    </h2>
     <!-- ! change with inline -->
-    <h2 onclick="this.innerHTML = 'successfully changed text with inline '">change text with inline</h2>
+    <h2 onclick="this.innerHTML = 'successfully changed text with inline '">
+      change text with inline
+    </h2>
     <!-- ! send this as parameter -->
-    <h2 onclick="changeTextWithThis(this)">change text with inline send this as a parameter</h2>
+    <h2 onclick="changeTextWithThis(this)">
+      change text with inline send this as a parameter
+    </h2>
+    
+    <button id="btn">click to add onclick</button>
     <script src="./index.js"></script>
-</body>
+  </body>
 </html>
