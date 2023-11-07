@@ -14,17 +14,7 @@
     <!-- All the (3) following examples retrieves the text of an <h1> element and copies it into a <p> element: -->
     <h1 id="id01">My First Page</h1>
     <p id="id02"></p>
-    <script>
-      // way: 1 The value of the text node can be accessed by the node's innerHTML property:
-      let myPera = document.getElementById("demo").innerHTML;
-      // way: 2 Accessing the innerHTML property is the same as accessing the nodeValue of the first child:
-      let myPera2 = document.getElementById("demo").firstChild.nodeValue;
-      // way: 3  Accessing the first child can also be done like this:
-      let myPera3 = document.getElementById("demo").childNodes[0].nodeValue;
-      console.log(myPera, myPera2, myPera3);
-      document.getElementById("id02").innerHTML =
-        document.getElementById("id01").innerHTML;
-    </script>
+    <script src="./index.js"></script>
   </body>
 </html>
 <!-- From the HTML above you can read:
