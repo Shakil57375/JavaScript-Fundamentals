@@ -22,3 +22,13 @@ element.insertBefore(insertBeforeTag, p2);
 // remove elements with javascript
 const div2 = document.getElementById("div2")
 div2.remove()
+
+
+// replacing html elements
+const para1 = document.createElement("p");
+const node1 = document.createTextNode("This is new.");
+para1.appendChild(node1);
+console.log(para1)
+const parent = document.getElementById("div3");
+const child = document.getElementById("p3");
+parent.replaceChild(para1, child);
