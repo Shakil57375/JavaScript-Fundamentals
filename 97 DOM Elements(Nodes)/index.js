@@ -10,3 +10,12 @@ const element = document.getElementById("div1");
 // way-2
 element.appendChild(para);
 // if you want to insert the element you have created at the first instead of last you can use insertBefore() function
+
+
+const insertBeforeTag = document.createElement("h1");
+const insertTextNode = document.createTextNode("insert before");
+insertBeforeTag.appendChild(insertTextNode);
+
+const p2 = document.getElementById("p2");
+element.insertBefore(insertBeforeTag, p2);
+
