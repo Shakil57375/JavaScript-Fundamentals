@@ -19,3 +19,6 @@ insertBeforeTag.appendChild(insertTextNode);
 const p2 = document.getElementById("p2");
 element.insertBefore(insertBeforeTag, p2);
 
+// remove elements with javascript
+const div2 = document.getElementById("div2")
+div2.remove()
