@@ -135,7 +135,7 @@ body {
 
 input[type="checkbox"] {
   margin-right: 5px;
-  vertical-align: middle;
+  vertical-align: bottom;
 }
 
 @media only screen and (max-width: 1024px) {
