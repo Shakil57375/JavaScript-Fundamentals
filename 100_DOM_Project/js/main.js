@@ -10,7 +10,7 @@ const loadMilestoneData = () => {
       <div class="checkbox">
         <input type="checkbox" />
       </div>
-      <div onclick = "openMilestone(this)">
+      <div onclick = "openMilestone(this, ${milestone._id})">
         <p>
           ${milestone.name}
           <span><i class="fas fa-chevron-down"></i></span>
@@ -31,7 +31,7 @@ const loadMilestoneData = () => {
     .join("")}`;
 };
 
-const openMilestone = (milestoneElements) => {
+const openMilestone = (milestoneElements, milestoneId) => {
   const currentPanel = milestoneElements.parentNode.nextElementSibling;
 
   const active = document.querySelector(".active");
@@ -45,6 +45,27 @@ const openMilestone = (milestoneElements) => {
     showPanel.classList.remove("show");
   }
   currentPanel.classList.toggle("show");
+  showMilestoneImg(milestoneId);
 };
+
+const showMilestoneImg = (milestoneId) => {
+  const milestoneImg = document.querySelector(".milestoneImage");
+  const milestoneTitle = document.querySelector(".title");
+  const milestoneDetails = document.querySelector(".details");
+
+  milestoneImg.style.opacity = "0";
+
+
+  milestoneImg.src = mileStoneData[milestoneId].image;
+  milestoneTitle.innerHTML = mileStoneData[milestoneId].name;
+  milestoneDetails.innerHTML = mileStoneData[milestoneId].description;
+};
+
+// listen for hero image load
+
+const milestoneImage = document.querySelector(".milestoneImage")
+milestoneImage.onload = function(){
+  this.style.opacity = "1"
+}
 
 loadMilestoneData();
