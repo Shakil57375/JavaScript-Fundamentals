@@ -5,10 +5,12 @@ const loadMilestoneData = () => {
   const milestones = document.querySelector(".milestones");
   milestones.innerHTML = `${mileStoneData
     .map((milestone) => {
-      return `<div class="milestone border-b">
+      return `<div class="milestone border-b"  id="${milestone._id}">
     <div class="flex">
       <div class="checkbox">
-        <input type="checkbox" />
+        <input type="checkbox" onclick="markMileStone(this, ${
+          milestone._id
+        })" />
       </div>
       <div onclick = "openMilestone(this, ${milestone._id})">
         <p>
@@ -55,7 +57,6 @@ const showMilestoneImg = (milestoneId) => {
 
   milestoneImg.style.opacity = "0";
 
-
   milestoneImg.src = mileStoneData[milestoneId].image;
   milestoneTitle.innerHTML = mileStoneData[milestoneId].name;
   milestoneDetails.innerHTML = mileStoneData[milestoneId].description;
@@ -63,9 +64,22 @@ const showMilestoneImg = (milestoneId) => {
 
 // listen for hero image load
 
-const milestoneImage = document.querySelector(".milestoneImage")
-milestoneImage.onload = function(){
-  this.style.opacity = "1"
-}
+const milestoneImage = document.querySelector(".milestoneImage");
+milestoneImage.onload = function () {
+  this.style.opacity = "1";
+};
+
+const markMileStone = (checkbox, id) => {
+  const doneList = document.querySelector(".doneList");
+  const milestoneList = document.querySelector(".milestones");
+  const item = document.getElementById(id);
+  if (checkbox.checked) {
+    milestoneList.removeChild(item);
+    doneList.appendChild(item);
+  } else {
+    milestoneList.appendChild(item);
+    doneList.removeChild(item);
+  }
+};
 
 loadMilestoneData();
