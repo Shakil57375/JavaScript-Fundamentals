@@ -1,13 +1,13 @@
-const milestoneData = JSON.parse(data).data;
-console.log(milestoneData);
+const mileStoneData = JSON.parse(data).data;
+console.log(mileStoneData);
 
 const loadMilestoneData = () => {
-  const milestoneDetails = document.querySelector(".milestones");
-  milestoneDetails.innerHTML = `${milestoneData
+  const milestonesLists = document.querySelector(".milestones");
+  milestonesLists.innerHTML = `${mileStoneData
     .map((milestones) => {
-      return `<div class="milestone border-b " id="${milestones._id}">
+      return `<div class="milestone border-b" id = "${milestones._id}">
     <div class="flex">
-      <div class="checkbox"><input type="checkbox" onclick = "ModuleDoneList(this, ${
+      <div class="checkbox"><input type="checkbox" onclick = "Checked(this, ${
         milestones._id
       })" /></div>
       <div onclick = "showModules(this, ${milestones._id})">
@@ -32,13 +32,7 @@ const loadMilestoneData = () => {
 };
 
 const showModules = (milestoneHeader, id) => {
-  const currentPanel = milestoneHeader.parentNode.nextElementSibling;
-
-  const showPanel = document.querySelector(".show");
-  if (!currentPanel.classList.contains("show") && showPanel) {
-    showPanel.classList.remove("show");
-  }
-  currentPanel.classList.toggle("show");
+  const milestonePanel = milestoneHeader.parentNode.nextElementSibling;
 
   const active = document.querySelector(".active");
   if (!milestoneHeader.classList.contains("active") && active) {
@@ -46,17 +40,23 @@ const showModules = (milestoneHeader, id) => {
   }
   milestoneHeader.classList.toggle("active");
 
-  milestoneImage(id);
+  const showPanel = document.querySelector(".show");
+  if (!milestonePanel.classList.contains("show") && showPanel) {
+    showPanel.classList.remove("show");
+  }
+  milestonePanel.classList.toggle("show");
+
+  showMilestoneImages(id);
 };
 
-const milestoneImage = (id) => {
+const showMilestoneImages = (id) => {
   const milestoneImg = document.querySelector(".milestoneImage");
   const milestoneTitle = document.querySelector(".title");
   const milestoneDetails = document.querySelector(".details");
   milestoneImg.style.opacity = "0";
-  milestoneImg.src = milestoneData[id].image;
-  milestoneTitle.innerHTML = milestoneData[id]?.name;
-  milestoneDetails.innerHTML = milestoneData[id]?.description;
+  milestoneImg.src = mileStoneData[id].image;
+  milestoneTitle.innerHTML = mileStoneData[id].name;
+  milestoneDetails.innerHTML = mileStoneData[id].description;
 };
 
 const milestoneImg = document.querySelector(".milestoneImage");
@@ -64,16 +64,17 @@ milestoneImg.onload = function () {
   this.style.opacity = "1";
 };
 
-const ModuleDoneList = (doneMileStone, id) => {
-  const finishedMileStone = document.querySelector(".doneList");
-  const milestones = document.querySelector(".milestones");
-  const item = document.getElementById(id)
-  if (doneMileStone.checked) {
-    finishedMileStone.appendChild(item);
-    milestones.removeChild(item);
+const Checked = (checkbox, id) => {
+  const doneList = document.querySelector(".doneList");
+  console.log(doneList)
+  const milestone = document.querySelector(".milestones");
+  const item = document.getElementById(id);
+  if (checkbox.checked) {
+    doneList.appendChild(item);
+    milestone.removeChild(item);
   } else {
-    finishedMileStone.removeChild(item);
-    milestones.appendChild(item);
+    doneList.removeChild(item);
+    milestone.appendChild(item);
   }
 };
 
