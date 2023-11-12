@@ -6,8 +6,10 @@ function loadData(callbackF) {
   xhr.onload = function () {
     console.log("into");
     callbackF(this);
+    // console.log(this.getAllResponseHeaders());
+    console.log(this.getResponseHeader("etag"));
   };
-    /* The default value for the async parameter is async = true.
+  /* The default value for the async parameter is async = true.
     You can safely remove the third parameter from your code.
     Synchronous XMLHttpRequest (async = false) is not recommended because the JavaScript will stop executing until the server response is ready. If the server is busy or slow, the application will hang or stop. */
   // prepare request - methods: GET, POST, PUT, PATCH, DELETE, OPTIONS
