@@ -1,4 +1,4 @@
-var num1 = 3;
+/* var num1 = 3;
 
 var sum = function () {
   var num3 = 4;
@@ -8,4 +8,15 @@ var sum = function () {
 };
 
 var myFunc = sum()
-console.dir(myFunc)
+console.dir(myFunc) */
+
+
+function bankAccount(initialBalance){
+    var balance = initialBalance;
+    return function() {
+        return balance
+    }
+}
+
+var account  = bankAccount(1000)
+console.dir(account)
