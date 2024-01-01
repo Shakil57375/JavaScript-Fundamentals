@@ -3,14 +3,16 @@ class Person {
     constructor(first, last, age) {
         this.firstName = first;
         this.lastName = last;
+        this.age = age;
         this.fullName = function(){
-            return this.firstName + ' ' + this.lastName 
+            return this.firstName + ' ' + this.lastName;  
         }
     }
 }
 
-const shakil = new Person("shakil", "hosssain")
+const shakil = new Person("shakil", "hosssain", 21)
 const shakil2 = new Person("shakil2", "hosssain2")
+console.log(shakil.age)
 // Adding a new property to an existing object is easy:
 shakil.country = "BD"
 // Adding a new property to an existing object is easy:
