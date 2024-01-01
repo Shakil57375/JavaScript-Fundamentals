@@ -17,7 +17,7 @@ class Dog extends Animal {
         // Call the constructor of the superclass (Animal)
         super(name, age, gender);
 
-        // Initialize subclass-specific property
+        // Initialize subclass-specific property 
         this.breed = breed;
     }
 
