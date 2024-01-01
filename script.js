@@ -1,4 +1,3 @@
-// Superclass
 class Animal {
     constructor(name, age, gender) {
         this.name = name;
