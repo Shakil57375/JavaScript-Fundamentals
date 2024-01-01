@@ -10,8 +10,8 @@ class Person {
     }
 }
 
-const shakil = new Person("shakil", "hosssain", 21)
-const shakil2 = new Person("shakil2", "hosssain2")
+const shakil = new Person("shakil", "Hossain", 21)
+const shakil2 = new Person("shakil2", "Hossain2")
 console.log(shakil.age)
 // Adding a new property to an existing object is easy:
 shakil.country = "BD"
