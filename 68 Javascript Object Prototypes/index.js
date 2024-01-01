@@ -1,10 +1,10 @@
 // The JavaScript prototype property allows you to add new properties to object constructors:
 class Person {
-    constructor(first, last, age, eyecolor) {
+    constructor(first, last, age, eyeColor) {
         this.firstName = first;
         this.lastName = last;
         this.age = age;
-        this.eyeColor = eyecolor;
+        this.eyeColor = eyeColor;
     }
 }
 
