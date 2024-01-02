@@ -17,13 +17,11 @@ console.log(car["weight"]);
 
 car.start();
 
-
-
 const obj = {
     name : "shakil",
     age : 21
 }
 
-const {name, age} = obj
+const {name: myName, age} = obj
 
-console.log(age)
+console.log(myName, age)

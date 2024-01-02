@@ -17,6 +17,6 @@ console.log(object2.city);
 
 /* When you access object2.city, it doesn't find the city property directly on object2. However, it looks up the prototype chain since you've set object2.__proto__ = object. So, it finds the city property in the prototype (object), and the value is "Cumilla". Therefore, calling console.log(object2.city) will output "Cumilla".
 
-If you call object2.getIntro(), it doesn't find the getIntro method directly on object2. Again, it looks up the prototype chain and finds the getIntro method in the prototype (object). Therefore, calling object2.getIntro() will print "Nabil from Cumilla" to the console.
+If you call object2.getIntro(), it doesn't find the getIntro method directly on object2. Again, it looks up the prototype chain and finds the getIntro method in the prototype (object). Therefore, calling object2.getIntro() will print "Jabil from Cumilla" to the console.
 
 Setting the prototype (__proto__) creates a link between object2 and object, allowing properties and methods to be inherited from the prototype if they are not found directly on the object. */
