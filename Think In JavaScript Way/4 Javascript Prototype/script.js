@@ -19,3 +19,4 @@ const tamim = Person("Tamim", 36);
 
 function test() {}
 
+console.log(Array.prototype);
