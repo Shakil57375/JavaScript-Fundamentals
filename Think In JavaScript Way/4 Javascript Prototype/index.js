@@ -7,7 +7,7 @@ let object = {
 };
 
 let object2 = {
-  name: "nabil",
+  name: "jabil",
 };
 // never change the proto just for understanding purpose.
 // when we set the __proto__ of object 2 to the object it will get access to the properties of object one that's how prototype chain work.

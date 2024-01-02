@@ -15,5 +15,15 @@ const car = {
 console.log(car.color);
 console.log(car["weight"]);
 
-
 car.start();
+
+
+
+const obj = {
+    name : "shakil",
+    age : 21
+}
+
+const {name, age} = obj
+
+console.log(age)
