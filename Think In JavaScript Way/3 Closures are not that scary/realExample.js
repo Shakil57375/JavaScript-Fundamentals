@@ -6,8 +6,6 @@ function stopWatch() {
   return getDelay;
 }
 
-var timer = stopWatch()
-
 for(var i = 0; i < 100000000; i++){
     var a = Math.random() * 1000000
 }

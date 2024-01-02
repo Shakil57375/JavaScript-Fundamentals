@@ -28,3 +28,4 @@ We create two instances of the Person object: person1 and person2, each with dif
 
 We call the sayHello method on each instance, demonstrating how the method is shared among all instances through the prototype.
    */
+
