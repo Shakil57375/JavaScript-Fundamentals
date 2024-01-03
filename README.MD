@@ -1,5 +1,5 @@
 # Github commands
-```bash
+```
 pip install foobar
 ```
 ## Usage
