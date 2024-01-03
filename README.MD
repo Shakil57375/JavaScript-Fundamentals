@@ -11,3 +11,9 @@ pwd
 ```
 touch [file Name]
 ```
+
+- ### To check how many file or what's the files you have type:
+
+```
+ls
+```
