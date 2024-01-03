@@ -17,3 +17,8 @@ touch [file Name]
 ```
 ls
 ```
+- ### To check what git tracking what not type:
+
+```
+git status
+```
