@@ -1,6 +1,7 @@
 # Github commands
+### To check the present working directory type
 ```
-pip install foobar
+pwd
 ```
 ## Usage
 ```
