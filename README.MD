@@ -3,7 +3,7 @@
 pip install foobar
 ```
 ## Usage
-```python
+```
 import foobar
 # returns 'words'
 foobar.pluralize('word')
