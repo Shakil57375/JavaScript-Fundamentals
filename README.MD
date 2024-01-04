@@ -33,5 +33,5 @@ git status
 ```
 git add [file name] // to add specific file
 git add --all // to add all the files on the folder
-git add . // to add all the file
+git add . // to add all the file [work as same as git add -all]
 ```
