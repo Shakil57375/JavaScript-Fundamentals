@@ -34,3 +34,70 @@ console.log(z); // Output: 10 (const variable cannot be reassigned)
 - Use const when the variable should not be reassigned.
 - Avoid using var in modern JavaScript, as let and const provide better scoping and behavior.
 */
+
+
+// Using var
+function exampleVar() {
+    if (true) {
+      var varVariable = "I am a var!";
+      console.log(varVariable); // Output: I am a var!
+    }
+    console.log(varVariable); // Output: I am a var!
+  }
+  
+  exampleVar();
+  
+  // Using let
+  function exampleLet() {
+    if (true) {
+      let letVariable = "I am a let!";
+      console.log(letVariable); // Output: I am a let!
+    }
+    // console.log(letVariable); // This line would cause an error as letVariable is not accessible here
+  }
+  
+  exampleLet();
+  
+  // Using const
+  function exampleConst() {
+    const constVariable = "I am a const!";
+    console.log(constVariable); // Output: I am a const!
+  
+    // constVariable = "Trying to reassign"; // This line would cause an error as constVariable cannot be reassigned
+  }
+  
+  exampleConst();
+  
+
+  // Using var
+function exampleVar() {
+    if (true) {
+      var varVariable = "I am a var!";
+      console.log(varVariable); // Output: I am a var!
+    }
+    console.log(varVariable); // Output: I am a var!
+  }
+  
+  exampleVar();
+  
+  // Using let
+  function exampleLet() {
+    if (true) {
+      let letVariable = "I am a let!";
+      console.log(letVariable); // Output: I am a let!
+    }
+    // console.log(letVariable); // This line would cause an error as letVariable is not accessible here
+  }
+  
+  exampleLet();
+  
+  // Using const
+  function exampleConst() {
+    const constVariable = "I am a const!";
+    console.log(constVariable); // Output: I am a const!
+  
+    // constVariable = "Trying to reassign"; // This line would cause an error as constVariable cannot be reassigned
+  }
+  
+  exampleConst();
+  
