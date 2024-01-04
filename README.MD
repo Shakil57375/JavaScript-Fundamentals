@@ -27,3 +27,11 @@ git status
 ```
 git status
 ```
+
+- ### To add something on the git or available for tracking of git just simply type type:
+
+```
+git add [file name] // to add specific file
+git add --all // to add all the files on the folder
+git add . // to add all the file
+```
