@@ -22,3 +22,8 @@ ls
 ```
 git status
 ```
+- ### To check the lists of files including hidden files type:
+
+```
+git status
+```
