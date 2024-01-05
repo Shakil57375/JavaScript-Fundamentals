@@ -189,7 +189,7 @@ const a = "inventor"
 const b = "below"
 const language = {
     name : "javascript",
-    // an es6 shortcut
+    // an es6 shortcut added
     b
 }
 
