@@ -6,3 +6,8 @@ const some = (hlw, ...rest) => {
 };
 
 some("the some is", 3, 5, 7, 8);
+
+const myArr = [2, 3,4 ]
+myArr.push(4)
+console.log(myArr)
+console.log([...myArr, 4])
