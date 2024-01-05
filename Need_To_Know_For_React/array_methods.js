@@ -102,7 +102,12 @@ let hasLargeNumber = numbers.some(num => num > 4); // hasLargeNumber: true
 // every() - Checks if all elements satisfy a condition
 let allLargeNumbers = numbers.every(num => num > 0); // allLargeNumbers: true
 
-// reduce() - Reduces the array to a single value
-let sum = numbers.reduce((acc, num) => acc + num, 0); // sum: 15
+// array reducer
+// array.reduce(callback(accumulator, currentValue, currentIndex, array), initialValue);
 
+// Summing up all elements in the array using reduce
+let sum = numbers.reduce((accumulator, currentValue) => {
+    return accumulator + currentValue;
+}, 0);
 
+console.log(sum); // Output: 15
