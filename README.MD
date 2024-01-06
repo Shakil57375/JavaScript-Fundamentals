@@ -55,5 +55,3 @@ git log --oneline [to have one line of history]
 ```
 git reflog
 ```
-
-## hlw
