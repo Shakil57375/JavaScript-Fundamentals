@@ -92,3 +92,32 @@ console.log(first2);
 // A
 console.log(third);
 // C
+
+const person1 = { name1: "Kyle", age: 25, favoriteFood: "Rice" }
+const { name1, ...rest } = person1
+
+console.log(name1)
+// Kyle
+console.log(rest)
+// { age: 25, favoriteFood: 'Rice' }
+
+// !Nested Object Destructuring
+/* It is pretty common to have an objected nested inside another object and want to get a specific value from it. With destructuring this is incredibly easy.
+ */
+const person2 = {
+  name2: "Kyle",
+  age: 25,
+  address: {
+    city2: "Somewhere",
+    state: "One Of Them",
+  },
+}
+const {
+  name2,
+  address: { city2 },
+} = person2
+
+console.log(name2)
+// Kyle
+console.log(city2)
+// Somewhere
