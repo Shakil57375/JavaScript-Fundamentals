@@ -132,3 +132,15 @@ console.log(name)
 // Kyle
 console.log(favoriteFood)
 // Banana
+
+// Destructuring Function Parameters
+/* In JavaScript it is very common to pass an object to a function so having the ability to destructure the object in the function definition and define defaults is incredibly useful. */
+
+function printPerson({ name, age, favoriteFood = "None" }) {
+  console.log(`Name: ${name}. Age: ${age}. Food: ${favoriteFood}.`)
+}
+
+const person5 = { name: "Kyle", age: 25 }
+
+printPerson(person5)
+// Name: Kyle. Age: 25. Food: None.
