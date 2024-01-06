@@ -121,3 +121,14 @@ console.log(name2)
 // Kyle
 console.log(city2)
 // Somewhere
+
+// ! Default Values
+/* It is pretty common to destructure an object without knowing if a property exists or not. Many times when this is the case there is a default value you want to apply in case that value does not exist. */
+
+const person4 = { name4: "Kyle", age: 25 , favoriteFood : "watermelon" }
+const { name4 = "Sally", favoriteFood = "Banana" } = person4
+
+console.log(name)
+// Kyle
+console.log(favoriteFood)
+// Banana
