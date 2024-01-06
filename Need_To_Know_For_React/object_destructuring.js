@@ -9,7 +9,7 @@ console.log(modifiedObject); // { a: 1, b: 2, c: 3 }
 const { b, ...newObject } = originalObject;
 console.log(newObject); // { a: 1 }
 
-// Editing a Property:
+// Editing a Property: 
 const { b: modifiedB } = originalObject;
 const editedObject = { ...originalObject, b: modifiedB + 10 };
 console.log(editedObject); // { a: 1, b: 12 }
