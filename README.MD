@@ -51,3 +51,7 @@ git log --oneline [to have one line of history]
 - at first copy the id of previous commit from (git commit --online)
 - then type [git reset --hard (previous commits id)]
 ```
+#### you will not get back the commits you have been switched on by using git log/ git log --oneline. But if you want to have all the commit history you can type 👍
+```
+git reflog
+```
