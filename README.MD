@@ -17,11 +17,13 @@ touch [file Name]
 ```
 ls
 ```
+
 - ### To check what git tracking what not type:
 
 ```
 git status
 ```
+
 - ### To check the lists of files including hidden files type:
 
 ```
@@ -34,4 +36,18 @@ git status
 git add [file name] // to add specific file
 git add --all // to add all the files on the folder
 git add . // to add all the file [work as same as git add -all]
+```
+
+- ### use the command to know the git commit history:
+
+```
+git log
+git log --oneline [to have one line of history]
+```
+
+- ### to have the previous commit back or to have what have you done on your previous commit you have to do this:
+
+```
+- at first copy the id of previous commit from (git commit --online)
+- then type [git reset --hard (previous commits id)]
 ```
