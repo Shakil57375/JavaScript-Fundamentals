@@ -50,8 +50,8 @@ console.log(second);
 // B
 console.log(rest);
 // ['C', 'D', 'E']
-
-const elements = document.querySelector("div");
+const elements = [3,4,5, 6,]
+// const elements = document.querySelector("div");
 const array3 = [...elements];
 
 array3.map((a) => {
@@ -60,3 +60,18 @@ array3.map((a) => {
 elements.map((e) => {
   /* This throws an error */
 });
+
+// ! Destructuring Function Returns
+/* If you have ever worked with React you are very familiar with this one. Destructuring arrays can be used when you want to return multiple values from a function as an array and easily access them.
+ */
+function sumAndMultiply(a, b) {
+  return [a + b, a * b, a/b]
+}
+
+const [sum2, multiplication, division = "there is no division value"] = sumAndMultiply(2, 3)
+
+console.log(sum2)
+// 5
+console.log(multiplication)
+// 6
+console.log(division)
