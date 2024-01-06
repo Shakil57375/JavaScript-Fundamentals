@@ -67,18 +67,28 @@ console.log(school);
 
 /* Imagine you want to get the first element out of an array. Normally you would do this by accessing the element at index 0.
  */
-const array = ["A", "B", "C", "D", "E"]
-const first = array[0]
+const array = ["A", "B", "C", "D", "E"];
+const first = array[0];
 
-console.log(first)
+console.log(first);
 // A
 
 /* this is not really a big deal, but this can be slightly simplified with destructuring. Instead of getting each element we want individually we will get all elements at once. */
 
-const array1 = ["A", "B", "C", "D", "E"]
-const [first1, second] = array1
+const array1 = ["A", "B", "C", "D", "E"];
+const [first1, second] = array1;
 
-console.log(first1)
+console.log(first1);
 // A
-console.log(second)
+console.log(second);
 // B
+
+/* if you want to skip an element, for example if you only want elements one and three, you would just leave out the name for the second variable, but keep the comma. This comma tells JS to just skip the second element.
+ */
+const array2 = ["A", "B", "C", "D", "E"];
+const [first2, , third] = array2;
+
+console.log(first2);
+// A
+console.log(third);
+// C

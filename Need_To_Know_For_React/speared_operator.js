@@ -14,7 +14,7 @@ const newArray = [...originalArray, 4, 5];
 console.log(newArray); // Output: [1, 2, 3, 4, 5]
 
 // Copying Objects (Shallow Copy)
-const originalObject = { key1: 'value1', key2: 'value2' };
+const originalObject = { key1: "value1", key2: "value2" };
 const copiedObject = { ...originalObject };
 console.log(copiedObject); // Output: { key1: 'value1', key2: 'value2' }
 
@@ -37,3 +37,26 @@ function sum(...numbers) {
 }
 
 console.log(sum(1, 2, 3, 4)); // Output: 10
+
+/* Spread Operator With Arrays
+The spread operator is a tool that lets you spread out all the elements of an array or object. This can be used to create new objects or arrays that are clones, but for our specific use case we can combine this with destructuring to get all other elements not specifically destructured already. */
+
+const array = ["A", "B", "C", "D", "E"];
+const [first, second, ...rest] = array;
+
+console.log(first);
+// A
+console.log(second);
+// B
+console.log(rest);
+// ['C', 'D', 'E']
+
+const elements = document.querySelector("div");
+const array3 = [...elements];
+
+array3.map((a) => {
+  /* This works */
+});
+elements.map((e) => {
+  /* This throws an error */
+});
